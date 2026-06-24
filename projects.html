@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Pradeep Rathi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">PradeepRathi<span>@BusinessAnalytics/OperationAnalytics</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+            </ul>
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/pradeeprathi2c/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PadeepRathi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main class="content-wrapper">
+            <!-- Projects Section -->
+            <section id="projects" class="section active-section">
+                <h2 class="section-title reveal-up">Analytics Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- SQL Project -->
+                    <a href="https://github.com/PadeepRathi/E-Commerce-Funnel-Analysis-II-Microsoft-SQL-Server-T-SQL-" target="_blank" class="project-card glass-card reveal-up" style="transition-delay: 0.1s; text-decoration: none; color: inherit;">
+                        <div class="project-icon"><i class="fas fa-database"></i></div>
+                        <h3>E-Commerce Operations Funnel Analysis</h3>
+                        <div class="tech-stack">
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">T-SQL</span>
+                        </div>
+                        <ul>
+                            <li>Analyzed 9,381 user events from 5,000 visitors to evaluate operational and conversion performance.</li>
+                            <li>Identified the primary process bottleneck at the View-to-Cart stage, where only 31.1% of users progressed.</li>
+                            <li>Measured KPI metrics including conversion rate (16.5%), Average Order Value ($106.51), and traffic source performance.</li>
+                            <li>Delivered actionable recommendations through detailed reporting and analysis.</li>
+                        </ul>
+                    </a>
+
+                    <!-- Python Project -->
+                    <a href="https://github.com/PadeepRathi/customer-segmentation" target="_blank" class="project-card glass-card reveal-up" style="transition-delay: 0.2s; text-decoration: none; color: inherit;">
+                        <div class="project-icon"><i class="fab fa-python"></i></div>
+                        <h3>Customer Segmentation & Reporting Analysis</h3>
+                        <div class="tech-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">Excel</span>
+                        </div>
+                        <ul>
+                            <li>Built a customer segmentation model using RFM analysis and K-Means clustering for 1,000 customers.</li>
+                            <li>Identified 8 customer groups and highlighted high-value segments responsible for significant revenue contribution.</li>
+                            <li>Performed data cleaning, validation, feature engineering, and performance reporting.</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <h3 class="subsection-title mt-6 reveal-up">GitHub Repositories</h3>
+                <div id="github-container" class="github-grid">
+                    <div class="loader">Fetching data from GitHub...</div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Pradeep Rathi | Business Analyst</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Skills | Pradeep Rathi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">PradeepRathi<span>@BusinessAnalytics/OperationAnalytics</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+            </ul>
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/pradeeprathi2c/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PadeepRathi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main class="content-wrapper">
+            <!-- Skills & Education Section -->
+            <section id="skills" class="section active-section">
+                <div class="split-layout">
+                    
+                    <!-- Left: Skills -->
+                    <div class="skills-column">
+                        <h2 class="section-title reveal-up">Technical Skills</h2>
+                        
+                        <div class="skill-category glass-card reveal-up" style="transition-delay: 0.1s;">
+                            <h3>Tools & Technologies</h3>
+                            <div class="skill-tags">
+                                <span>Microsoft Excel</span>
+                                <span>SQL / T-SQL</span>
+                                <span>Microsoft SQL Server</span>
+                                <span>Python (Pandas, Scikit-Learn)</span>
+                                <span>Google Sheets</span>
+                                <span>Power BI (Learning)</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category glass-card reveal-up" style="transition-delay: 0.2s;">
+                            <h3>Business & Data Analysis</h3>
+                            <div class="skill-tags">
+                                <span>Business Analytics</span>
+                                <span>Data Visualization</span>
+                                <span>KPI Tracking & Reporting</span>
+                                <span>Funnel & Conversion Analysis</span>
+                                <span>Customer Segmentation</span>
+                                <span>Forecasting</span>
+                                <span>Data-driven Decision Making</span>
+                                <span>Data Storytelling</span>
+                                <span>Data Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category glass-card reveal-up" style="transition-delay: 0.3s;">
+                            <h3>Operations & Business Skills</h3>
+                            <div class="skill-tags">
+                                <span>Operations Management</span>
+                                <span>Resource Planning</span>
+                                <span>Process Improvement</span>
+                                <span>Vendor & Stakeholder Management</span>
+                                <span>Project Coordination</span>
+                                <span>Process Documentation</span>
+                                <span>Strategic Planning</span>
+                                <span>Reporting & Analysis</span>
+                                <span>Root Cause Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Education & Certs -->
+                    <div class="education-column">
+                        <h2 class="section-title reveal-up">Education & Certifications</h2>
+                        
+                        <div class="edu-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                            <i class="fas fa-graduation-cap edu-icon"></i>
+                            <div class="edu-details">
+                                <h3>MBA (Business Analytics)</h3>
+                                <h4>Sharda University, Greater Noida</h4>
+                                <span class="edu-date">Expected 2027</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                            <i class="fas fa-university edu-icon"></i>
+                            <div class="edu-details">
+                                <h3>B.Sc. (Hons.) Applied Mathematics</h3>
+                                <h4>Amity University, Noida</h4>
+                            </div>
+                        </div>
+
+                        <h3 class="subsection-title mt-4 reveal-up" style="transition-delay: 0.3s;">Certifications</h3>
+                        <ul class="cert-list glass-card reveal-up" style="transition-delay: 0.4s;">
+                            <li><i class="fas fa-certificate"></i> Business Analytics for Management Decision – NPTEL (IIT)</li>
+                            <li><i class="fas fa-certificate"></i> Business Intelligence & Analytics – NPTEL (IIT)</li>
+                        </ul>
+                        
+                        <h3 class="subsection-title mt-4 reveal-up" style="transition-delay: 0.5s;">Languages</h3>
+                        <div class="lang-tags reveal-up" style="transition-delay: 0.6s;">
+                            <span class="tag">English</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">German (Elementary)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Pradeep Rathi | Business Analyst</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

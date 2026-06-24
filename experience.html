@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Pradeep Rathi</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">PradeepRathi<span>@BusinessAnalytics/OperationAnalytics</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+            </ul>
+            <div class="nav-socials">
+                <a href="https://www.linkedin.com/in/pradeeprathi2c/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PadeepRathi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main class="content-wrapper">
+            <!-- Experience Section -->
+            <section id="experience" class="section active-section">
+                <h2 class="section-title reveal-up">Professional Experience</h2>
+                
+                <p class="summary reveal-up" style="text-align: center; max-width: 700px; margin: -1.5rem auto 3rem; color: #cbd5e1;">
+                    3+ years leading construction operations — managing teams, tracking KPIs, and using data to drive measurable efficiency gains.
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Operations Lead</h3>
+                            <h4>Panwar Construction Company</h4>
+                            <span class="timeline-date">Feb 2022 – Jun 2025</span>
+                            <ul>
+                                <li>Managed daily operations across multiple construction projects involving 300+ workers and external vendors.</li>
+                                <li>Developed Excel-based tracking systems to monitor resource utilization, resulting in a <strong>10% reduction in material wastage</strong>.</li>
+                                <li>Coordinated logistics, procurement, and supplier activities to improve project execution and delivery timelines.</li>
+                                <li>Monitored operational performance metrics and prepared reports for management decision-making.</li>
+                                <li>Maintained process documentation and facilitated smooth knowledge transfer during leadership transition.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <h3 class="subsection-title mt-6 reveal-up">Key Achievements</h3>
+                <div class="projects-grid" style="max-width: 800px; margin: 0 auto;">
+                    <div class="glass-card reveal-up" style="text-align: center; transition-delay: 0.2s;">
+                        <h2 style="font-size: 2.5rem; color: var(--accent-secondary); margin-bottom: 0.5rem;">10%</h2>
+                        <p style="color: var(--text-secondary);">Reduction in Material Wastage</p>
+                    </div>
+                    <div class="glass-card reveal-up" style="text-align: center; transition-delay: 0.3s;">
+                        <h2 style="font-size: 2.5rem; color: var(--accent-secondary); margin-bottom: 0.5rem;">3+</h2>
+                        <p style="color: var(--text-secondary);">Years of Operations Leadership</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Pradeep Rathi | Business Analyst</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
